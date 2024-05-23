@@ -1,0 +1,34 @@
+@import 'variables';
+
+@mixin centralize(){
+    background-color: $pry;
+    color: $sec;
+    text-align: center;
+}
+
+
+header{
+     background-color: $pry;
+     padding: 20px 10px;
+     h1{
+         color:$sec;
+         nav{
+             ul{
+                 li{
+                     a{
+                         color:$sec2;
+                     }
+                 }
+             }
+         }
+     }
+}
+
+main{
+    h1{
+        @include centralize()
+    }
+    p{
+        @include centralize()
+    }
+}

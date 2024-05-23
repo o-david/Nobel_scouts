@@ -1,0 +1,21 @@
+header {
+  background-color: #a73c5a;
+  padding: 20px 10px;
+}
+header h1 {
+  color: #01084f;
+}
+header h1 nav ul li a {
+  color: #391954;
+}
+
+main h1 {
+  background-color: #a73c5a;
+  color: #01084f;
+  text-align: center;
+}
+main p {
+  background-color: #a73c5a;
+  color: #01084f;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

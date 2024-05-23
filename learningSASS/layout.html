@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            border: 1px solid black;
+            height: 10vh;
+            margin-bottom: 5vh;
+        }
+        #par{
+            display: flex;  
+            flex-wrap: wrap; 
+            justify-content: space-between;  
+        }
+        #left{
+            width: 65%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #right{
+            width: 30%;
+            height: 80vh;
+            border: 1px solid black;
+        }
+        .m-child{
+            border: 1px solid black;
+            height: 48%;
+            
+        }
+        #top-left{
+            display: flex;
+            justify-content: space-between;
+            border: none;
+        }
+        .first{
+            border: 1px solid black;
+            width: 46%;
+        }
+        *{
+            border-radius: 4px;
+            margin: 0;
+            padding: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>GomyCode header</h1>
+    </header>
+    <div id="par">
+        <div id="left">
+            <div class="m-child" id="top-left">
+                <div class="first">
+                    <h1>Personal Performance</h1>
+                </div>
+                <div class="first"> <h1>Graduated Students</h1></div>
+            </div>
+            <div class="m-child">
+                <h1>Software Developer Bootcamp</h1>
+            </div>
+        </div>
+        <div id="right">tasks</div>
+    </div>
+</body>
+</html>
