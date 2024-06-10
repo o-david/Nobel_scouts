@@ -31,4 +31,7 @@ main{
     p{
         @include centralize()
     }
+    a{
+            @include centralize()
+    }
 }

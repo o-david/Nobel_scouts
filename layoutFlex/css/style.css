@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box {
+  background-color: #bebebe;
+  text-align: center;
+}
+.logo {
+  padding: 1lh;
+}
+header {
+  padding: 3lh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav p {
+  background-color: #bebebe;
+  text-align: center;
+  width: 24%;
+  padding: 0.4lh 0;
+}
+#about-links {
+  display: flex;
+  justify-content: space-between;
+}
+#about-links > div {
+  width: 49%;
+}
+#about {
+  padding: 6lh 0;
+}
+#quicklinks {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.link1 {
+  padding: 2lh;
+}
+.link2 {
+  padding: 3lh;
+}
+#abs {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+}
+footer {
+  position: relative;
+}
