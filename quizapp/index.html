@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-right">Quiz Title</h1>
+    <form name="quiz" onsubmit="return getAnswer(event)" class="flex flex-col gap-10">
+      <div>
+        <p>Where are we?</p>
+        <div>
+            <input type="radio" id="q1a1" name="q1" value="Abuja">
+            <label for="q1a1">Abuja</label>
+        </div>
+        <div>
+            <input type="radio" id="q1a2" name="q1" value="Ilorin">
+            <label for="q1a2">Ilorin</label>
+        </div>
+        <div>
+            <input type="radio" id="q1a3" name="q1" value="Enugu">
+            <label for="q1a3">Enugu</label>
+        </div>
+        <input type="password" name="code">
+      </div>
+      <div>
+        <p>What color is the sky</p>
+        <div>
+            <input type="radio" id="q2a1" name="q2" value="Red">
+            <label for="q2a1">Red</label>
+        </div>
+        <div>
+            <input type="radio" id="q2a2" name="q2" value="Blue">
+            <label for="q2a2">Blue</label>
+        </div>
+        <div>
+            <input type="radio" id="q2a3" name="q2" value="White">
+            <label for="q2a3">White</label>
+        </div>
+      </div>
+      <div>
+        <p>Which is sweeter?</p>
+        <div>
+            <input type="radio" id="q3a1" name="q3" value="Rice">
+            <label for="q3a1">Rice</label>
+        </div>
+        <div>
+            <input type="radio" id="q3a2" name="q3" value="Beans">
+            <label for="q3a2">Beans</label>
+        </div>
+        <div>
+            <input type="radio" id="q3a3" name="q3" value="Spaghetti">
+            <label for="q3a3">Spaghetti</label>
+        </div>
+      </div>
+      <button class="bg-green-600 text-right text-white pr-10">Submit</button>
+    </form>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
