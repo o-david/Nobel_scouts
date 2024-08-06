@@ -1,0 +1,7 @@
+ALGORITHM algorithm_name
+VAR
+    name : type := value;
+    name : type := value;
+BEGIN
+    set_instructions
+END

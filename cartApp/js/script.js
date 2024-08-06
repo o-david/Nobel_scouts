@@ -5,6 +5,7 @@ let qty3 = document.getElementById('qty3')
 let total = document.getElementById('total')
 
 function add(ind) {
+    let village
     if (ind == 1) {
         console.log(qty1.value);
         qty1.innerText = parseInt(qty1.innerText) + 1

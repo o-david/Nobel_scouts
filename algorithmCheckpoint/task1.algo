@@ -1,0 +1,33 @@
+ALGORITHM Sentence_reader
+VAR
+    sentence : STRING;
+    wordCount, vowelCount, charCount, i : INTEGER :=0;
+BEGIN
+    read(sentence)
+    WHILE (sentence[i] <> '.') DO //I like dodo.
+        IF (sentence[i]= " ") THEN
+            wordCount := wordCount + 1
+        END_IF
+        SWITCH (sentence[i]) DO
+            case "a" : 
+            case "A" : 
+            case "e" : 
+            case "E" : 
+            case "i" : 
+            case "I" : vowelCount:= vowelCount+1
+            case "o" : 
+            case "O" : 
+            case "u" : 
+            case "U" : 
+        END_SWITCH
+
+        i= i+1
+    END_WHILE
+    charCount:= i+1
+    wordCount := wordCount + 1
+
+
+    write(charCount)
+    write(wordCount)
+    write(vowelCount)
+END
