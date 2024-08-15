@@ -52,6 +52,19 @@ function pow(x, n) {
     return total
 }
 
+let stuff=
+{
+   0: {
+    name:"",
+    email:""
+    },
+   0: {
+    name:3434,
+    email:""
+    },
+
+}
+
 console.log(pow(10,5));
 
 // 5* fact4
