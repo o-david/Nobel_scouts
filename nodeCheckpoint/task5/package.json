@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
+  "name": "task5",
+  "version": "1.0.0",
+  "main": "email-sender.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
