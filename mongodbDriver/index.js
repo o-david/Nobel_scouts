@@ -15,7 +15,7 @@ const userCol = client.db("nob").collection("user")
 connectdb()
 
 
-app.post("", async()=>{
+app.post("/", async()=>{
     
     const work =await userCol.insertOne({name:"jones", school:"GMC"})
 
