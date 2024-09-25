@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Client</title>
+    <style>
+        
+        .usercardGrp{
+            width: 90%;
+            margin: 5px auto;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .usercard{
+            width: 30%;
+            padding: 5px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rest Client</h1>
+    <div>
+        <div id="output" class="usercardGrp"></div>
+
+        <form onsubmit="createUser(event)">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <button type="submit">Submit</button>
+            <p id="loader" style="display: none;">I am loading...</p>
+        </form>
+
+    </div>
+    <script src="main.js"></script>    
+</body>
+</html>

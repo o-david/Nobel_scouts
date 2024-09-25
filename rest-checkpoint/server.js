@@ -4,14 +4,14 @@ import connectDB from "./db/db.js";
 import User from "./models/user.model.js";
 import { createUser, getUsers } from "./controllers/UserControllers.js";
 import userRouter from "./routes/userRoutes.js";
-
+import cors from "cors";
 dotenv.config();
 connectDB();
 
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-
+app.use(cors({origin:['http://127.0.0.1:5500']}));
 app.get("/", (req, res) => {
     res.send("Hello World");
 });
