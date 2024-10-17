@@ -8,10 +8,20 @@ import { movies } from './data'
 
 function App() {
   const [title, setTitle] = useState('')
+  const [rating, setRating] = useState(0)
   const [allMovies, setMovies] = useState(movies)
-  // const [newTitle, setNewTitle] = useState('')  
-  // const [newDesc, setDesc] = useState('')  
-  // const [newDesc, setDesc] = useState('')  
+  const addMovie = (e)=>{
+    e.preventDefault()
+    const form = e.target
+    const movie = {
+      title: form[0].value,
+      description: form[1].value,
+      posterURL: form[2].value,
+      rating: form[3].value
+    }
+    setMovies([...allMovies, movie])
+    form.reset()
+  }
   return (
    <>
     <h1>Welcome to the Movie App</h1>
@@ -21,18 +31,24 @@ function App() {
         Movie Title
       </label>
       <input type='text' value={title} onChange={(e)=>setTitle(e.target.value)} placeholder='Search movie title' />
-    </div>
-    {/* <h2>Add Movies</h2>
-    <form onSubmit={addMovie}>
-      <input type='text' placeholder='Enter movie title' />
-      <input type='text' placeholder='Enter movie description' />
-      <input type='text' placeholder='Enter movie poster URL' />
-      <input type='number' placeholder='Enter movie rating' min='0' max='10' />
-      <button type='submit'>Add Movie</button>
-    </form> */}
+      <label>
+        Rating
+      </label>
+      <input type='number' value={rating} onChange={(e)=>setRating(e.target.value)} />
 
+    </div>
+
+    <h2>Add Movie</h2>
+
+    <form onSubmit={addMovie}>
+      <input type='text' placeholder='Movie Title' />
+      <input type='text' placeholder='Description' />
+      <input type='url' placeholder='Poster URL' />
+      <input type='number' placeholder='Rating' />
+      <button type='submit'>Add Movie</button>
+    </form>
     {
-      title?<Filtered title={title} movies={allMovies}/>:<MovieList movies={allMovies}/>
+      (title||rating)?<Filtered title={title} rating={parseInt(rating)} movies={allMovies}/>:<MovieList movies={allMovies}/>
     }
    </>
   )

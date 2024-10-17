@@ -3,7 +3,7 @@ export const movies = [
     title: "Attack on Titan",
     description: "Humanity fights for survival against man-eating giants.",
     posterURL: "https://gizmodo.com/app/uploads/2022/08/5afaa06808a2322f2bb5fc813ad5d785.jpg",
-    rating: 9.0,
+    rating: 9,
 },
 {
     title: "Death Note",
